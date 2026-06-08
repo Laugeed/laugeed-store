@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laugeed Store</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══ НАВИГАЦИЯ ═══ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">Laugeed<span class="logo-accent">Store</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Приложения</a>
+      <a href="updates.html" class="nav-link">Обновления</a>
+    </div>
+    <div class="nav-region" id="regionDisplay">🌍 USD</div>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Магазин приложений</div>
+    <h1 class="hero-title">Laugeed<br/><span class="gradient-text">Store</span></h1>
+    <p class="hero-sub">Авторские приложения для Windows — ИИ-ассистенты, утилиты и инструменты нового поколения</p>
+  </div>
+  <div class="hero-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+</section>
+
+<!-- ═══ ПРИЛОЖЕНИЯ ═══ -->
+<section class="apps-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Все приложения</h2>
+      <span class="app-count" id="appCount">—</span>
+    </div>
+    <div class="apps-grid" id="appsGrid">
+      <!-- Карточки генерируются из apps.json -->
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <p>Загрузка приложений...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ФУТЕР ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span>Laugeed Store</span>
+      </div>
+      <p class="footer-copy">© 2026 Laugeed. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
